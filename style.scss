@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700;800&family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body,p,h1,h2,strong,span {
+    padding:0;
+    margin:0;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.txt-hide {
+    position:absolute;
+    width:1;
+    height:1;
+    clip: rect(0,0,0,0);
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 1060px;
+    background-color: #F2F2F2;
+    border:2px solid #BDBDBD;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin:86px auto;
+}
+
+.tit-list {
+    text-align: center;
+    padding:41px 0 0 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+}
+
+.tit-list::after {
+    content:" ";
+    display: block;
+    width:650px;
+    height: 2px;
+    background-color:#BDBDBD;
+    margin:0 auto;
+    margin-top:36px;
+}
+
+.divide-list {
+    display:flex;
+    gap:60px;
+    justify-content: center;
+    padding:27px 0;
+}
+
+.divide-list li:first-child {
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 19px;
+    letter-spacing: 0em;
+}
+
+.divide-list li:not(:first-child) {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    color: #828282;
+}
+
+.movie-info {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding:25px 26px 28px 25px;
+    gap:23px;
+    background-color:#FFF;
+    margin: 0 27px 30px;
+    box-sizing: border-box;
+    border: 2px solid #BDBDBD;
+    border-radius: 20px;
+}
+
+.movie-info li {
+    border:1px solid #BDBDBD;
+    background-color: #FFF;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size:0;
+}
+.movie-info li .txt-info{
+    padding:18px 19px 17px 19px;
+    box-sizing: border-box;
+}
+
+.txt-info img {
+    width:180px;
+}
+
+.movie-info li h2 {
+    display:block;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 23px;
+    letter-spacing: 0em;
+    margin:11px 0;
+}
+
+.movie-info li .movie-score,.movie-type {
+    display: inline-block;
+}
+.movie-info li .movie-score {
+    /* margin-right: 42px; */
+    float: right;
+} 
+.movie-info li .txt-info {
+    content:'';
+    display: block;
+    clear: both;
+}
+/* .movie-info li .movie-score strong::after {
+    content: '';
+    background-image:url("./images/Star\ 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.movie-info li strong {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    color:#828282;
+    margin-right: 5px;
+} */
+
+.movie-info li span {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    vertical-align: top;
+}
+
+
+
+.movie-info li .link-book,.movie-info li .link-preview{
+    display: inline-block;
+    outline: 1px solid #BDBDBD;
+    background-color: #F2F2F2;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:black;
+    padding:8px 0 10px 0;
+    box-sizing: border-box;
+    width:50%;
+}
+
+.movie-info li .link-book {
+    border-radius:  0 0 0 10px;
+}
+
+.movie-info li .link-preview {
+    border-radius: 0 0 10px 0;
+}
+
+.movie-info li .link-preview::before {
+    content: '';
+    background-image:url("./images/play-circle.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right:3px;
+}
+.footer {
+    background-color:#F2F2F2;
+    padding-bottom: 213px;
+}
+
+.container {
+    width: 1189px;
+    margin:0 auto;
+}
+
+.container h2 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+    padding:53px 0 42px;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.container div {
+    margin-top:32px;
+    display:inline-block;
+}
+
+.container .company::after,.container .lion::after,.container .num::after,.container  .type::after {
+    display: block;
+    content: '';
+    width:1px;
+    height: 15px;
+    background-color:gray;
+    float:right;
+    margin:0 7px;
+}
+
+.movie-score strong {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    color:#828282;
+    margin-right: 5px;
+    &::after {
+        content: '';
+        background-image:url("./images/Star\ 1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 14px;
+        height: 14px;
+        display: inline-block;
+        margin-left: 5px;
+    }
+}
