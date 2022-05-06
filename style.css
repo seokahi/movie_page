@@ -197,13 +197,30 @@ a {
   line-height: 26px;
   letter-spacing: 0em;
   padding: 53px 0 42px;
-  border-bottom: 1px solid #C4C4C4;
+  display:inline-block;
 }
 
-.container div {
+/* .container .logo::after {
+  content:'';
+  display:block;
+  clear:both;
+} */
+
+
+.container .logo img {
+  float:right;
+  padding:56px 25px 0 0;
+  width:26px;
+  height:26px;
+
+}
+/* border-bottom: 1px solid #C4C4C4; */
+
+.container .div {
   margin-top: 32px;
   display: inline-block;
 }
+
 
 .container .company::after, .container .lion::after, .container .num::after, .container .type::after {
     display: block;
@@ -233,5 +250,15 @@ a {
     height: 14px;
     display: inline-block;
     margin-left: 5px;
+}
+.address {
+  margin-right:280px;
+}
+.main_company strong {
+  font-family: Noto Sans KR;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
 }
 /*# sourceMappingURL=style.css.map */
