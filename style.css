@@ -198,23 +198,17 @@ a {
   letter-spacing: 0em;
   padding: 53px 0 42px;
   display:inline-block;
+  margin-right:868px;
 }
-
-/* .container .logo::after {
-  content:'';
-  display:block;
-  clear:both;
-} */
 
 
 .container .logo img {
-  float:right;
   padding:56px 25px 0 0;
   width:26px;
   height:26px;
 
 }
-/* border-bottom: 1px solid #C4C4C4; */
+
 
 .container .div {
   margin-top: 32px;
